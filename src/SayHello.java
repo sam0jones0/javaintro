@@ -31,8 +31,16 @@ public class SayHello {
         greeting(name);
 
         System.out.println("Count to what number?");
-        final int countTo = Integer.parseInt(readStdIn());
-        count(countTo);
+        Boolean repeat = true;
+        while (repeat) {
+            try {
+                final int countTo = Integer.parseInt(readStdIn());
+                count(countTo);
+                repeat = false;
+            } catch (NumberFormatException e) {
+                System.out.println("Please supply an int:");
+            }
+        }
 
         System.out.println("Goodbye.");
         reader.close();
