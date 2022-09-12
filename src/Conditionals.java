@@ -22,10 +22,18 @@ public class Conditionals {
         // int num2 = getInt();
         // System.out.println(Integer.max(num1, num2));
 
-        System.out.println("Give me a number between 1 and 12:");
         int month = 0;
         do {
+            System.out.println("Give me a number between 1 and 12:");
             month = getInt();
-        } while (1 <= month <= 12);
+        } while (month >= 1 && month <= 12); // FIXME: Not working correctly.
+
+        switch (month) {
+        case 6:
+        case 7:
+        case 8: {
+            System.out.println("Month number " + month + " is in Summer");
+        }
+        }
     }
 }
