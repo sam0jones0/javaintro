@@ -58,6 +58,10 @@ public class SayHello {
         System.out.println("I am a boolean " + boolA);
         System.out.println("I am a char " + charA);
 
+        double doubleB = doubleA * intA;
+        doubleB++;
+        System.out.println(doubleB);
+
         System.out.println("Goodbye.");
         reader.close();
     }
