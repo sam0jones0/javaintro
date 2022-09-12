@@ -26,7 +26,7 @@ public class Conditionals {
         do {
             System.out.println("Give me a number between 1 and 12:");
             month = getInt();
-        } while (month >= 1 && month <= 12); // FIXME: Not working correctly.
+        } while (month < 1 || month > 12);
 
         switch (month) {
         case 6:
