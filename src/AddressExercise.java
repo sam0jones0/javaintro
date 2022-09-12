@@ -1,4 +1,4 @@
-public class VarExercise {
+public class AddressExercise {
     public static void main(String[] args) {
         int x = 100;
         int y = 5;
