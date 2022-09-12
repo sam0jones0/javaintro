@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class SayHello {
     static Scanner reader = new Scanner(System.in);
 
+    /**
+     * Reads a single line from standard input and returns.
+     * 
+     * @return The next line of standard input. Or an error message if there is no
+     *         next line.
+     */
     private static String readStdIn() {
         while (reader.hasNextLine()) {
             String input = reader.nextLine();
@@ -41,6 +47,16 @@ public class SayHello {
                 System.out.println("Please supply an int:");
             }
         }
+
+        int intA = 7;
+        double doubleA = 3.141;
+        boolean boolA = true;
+        char charA = '\u2611';
+
+        System.out.println("I am an int " + intA);
+        System.out.println("I am a double " + doubleA);
+        System.out.println("I am a boolean " + boolA);
+        System.out.println("I am a char " + charA);
 
         System.out.println("Goodbye.");
         reader.close();
