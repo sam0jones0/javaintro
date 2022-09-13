@@ -54,7 +54,7 @@ public class DeckOfCards {
     public static void main(String[] args) {
         DeckOfCards myDeck = new DeckOfCards();
         for (Card aCard : myDeck.deck) {
-            System.out.println(aCard.value + aCard.suit);
+            System.out.println(aCard.getValue() + aCard.getSuit());
 
         }
     }
