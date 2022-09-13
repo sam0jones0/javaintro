@@ -12,7 +12,7 @@ public class Student {
     }
 
     public byte getAge() {
-        return this.age;
+        return age;
     }
 
     public void setAge(byte age) {
@@ -20,7 +20,7 @@ public class Student {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
@@ -28,7 +28,7 @@ public class Student {
     }
 
     public char getGrade() {
-        return this.grade;
+        return grade;
     }
 
     public void setGrade(char grade) {
