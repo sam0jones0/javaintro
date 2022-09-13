@@ -39,8 +39,8 @@ public class DeckOfCards {
         String[] values = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
 
         int pos = 0;
-        for (String value : values) {
-            for (char suit : suits) {
+        for (char suit : suits) {
+            for (String value : values) {
                 deck[pos] = new Card(suit, value);
                 pos++;
             }
