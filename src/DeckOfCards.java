@@ -30,16 +30,17 @@ public class DeckOfCards {
     }
 
     public DeckOfCards() {
-        Card[] deck = new Card[52];
+        this.deck = new Card[52];
 
         char[] suits = { 'C', 'H', 'S', 'D' };
-        String[] values = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
-                            "J", "Q", "K" };
+        String[] values = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 
         int pos = 0;
         for (String value : values) {
             for (char suit : suits) {
-                deck[pos] = new Card(suit, value);
+                Card thisCard = deck[pos];
+                thisCard.setSuit(suit);
+                thisCard.setValue(value);
                 pos++;
             }
 
