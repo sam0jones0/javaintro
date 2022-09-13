@@ -18,6 +18,10 @@ public class DeckOfCards {
             return value + suit;
         }
 
+        public String toString() {
+            return value + suit;
+        }
+
         public char getSuit() {
             return suit;
         }
