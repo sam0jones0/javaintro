@@ -20,7 +20,7 @@ public class Student {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -28,7 +28,7 @@ public class Student {
     }
 
     public char getGrade() {
-        return grade;
+        return this.grade;
     }
 
     public void setGrade(char grade) {
