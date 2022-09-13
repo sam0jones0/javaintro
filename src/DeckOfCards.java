@@ -41,9 +41,9 @@ public class DeckOfCards {
         int pos = 0;
         for (String value : values) {
             for (char suit : suits) {
-                Card thisCard = new Card();
-                thisCard.setSuit(suit);
-                thisCard.setValue(value);
+                Card thisCard = new Card(suit, value);
+                // thisCard.setSuit(suit);
+                // thisCard.setValue(value);
                 deck[pos] = thisCard;
                 pos++;
             }
@@ -55,7 +55,6 @@ public class DeckOfCards {
         DeckOfCards myDeck = new DeckOfCards();
         for (Card aCard : myDeck.deck) {
             System.out.println(aCard.getValue() + aCard.getSuit());
-
         }
     }
 }
