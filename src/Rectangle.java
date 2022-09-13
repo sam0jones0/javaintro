@@ -26,5 +26,6 @@ public class Rectangle {
         int w = reader.nextInt();
 
         System.out.println("Area of rectangle is: " + Rectangle.getArea(l, w));
+        reader.close();
     }
 }
