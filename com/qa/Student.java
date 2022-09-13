@@ -1,3 +1,5 @@
+package com.qa;
+
 public class Student {
     private byte age;
     private String name;
