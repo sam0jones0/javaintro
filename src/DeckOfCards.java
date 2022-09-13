@@ -11,6 +11,9 @@ public class DeckOfCards {
             this.value = value;
         }
 
+        public Card() {
+        }
+
         public char getSuit() {
             return suit;
         }
@@ -38,11 +41,20 @@ public class DeckOfCards {
         int pos = 0;
         for (String value : values) {
             for (char suit : suits) {
-                Card thisCard = deck[pos];
+                Card thisCard = new Card();
                 thisCard.setSuit(suit);
                 thisCard.setValue(value);
+                deck[pos] = thisCard;
                 pos++;
             }
+
+        }
+    }
+
+    public static void main(String[] args) {
+        DeckOfCards myDeck = new DeckOfCards();
+        for (Card aCard : myDeck.deck) {
+            System.out.println(aCard.value + aCard.suit);
 
         }
     }
