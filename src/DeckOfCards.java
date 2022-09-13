@@ -14,6 +14,10 @@ public class DeckOfCards {
         public Card() {
         }
 
+        public String toString() {
+            return value + suit;
+        }
+
         public char getSuit() {
             return suit;
         }
@@ -50,7 +54,7 @@ public class DeckOfCards {
     public static void main(String[] args) {
         DeckOfCards myDeck = new DeckOfCards();
         for (Card aCard : myDeck.deck) {
-            System.out.println(aCard.getValue() + aCard.getSuit());
+            System.out.println(aCard);
         }
     }
 }
