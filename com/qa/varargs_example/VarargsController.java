@@ -1,4 +1,4 @@
-package com.qa.VarargsExample;
+package com.qa.varargs_example;
 
 public class VarargsController {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.qa.EnumCardsExample;
+package com.qa.enum_cards_example;
 
 public class DeckOfCards {
     Card[] deck;
