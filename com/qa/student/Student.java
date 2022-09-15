@@ -1,4 +1,4 @@
-package com.qa;
+package com.qa.student;
 
 public class Student {
     private byte age;

@@ -1,4 +1,4 @@
-package com.qa;
+package com.qa.student;
 
 public class Main {
     public static void main(String[] args) {
