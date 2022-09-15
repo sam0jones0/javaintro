@@ -1,4 +1,4 @@
-package com.qa.advanced;
+package com.qa.EnumCardsExample;
 
 public class Card {
     private Suit suit;
