@@ -1,17 +1,20 @@
 package com.qa.enum_cards_example;
 
+import java.util.ArrayList;
+
 public class DeckOfCards {
-    Card[] deck;
+    ArrayList<Card> deck;
 
     DeckOfCards() {
-        this.deck = new Card[52];
+        this.deck = new ArrayList<Card>();
 
-        int pos = 0;
         for (Suit suit : Suit.values()) {
             for (Rank value : Rank.values()) {
-                deck[pos] = new Card(suit, value);
-                pos++;
+                deck.add(new Card(suit, value));
             }
         }
+
+        // FIXME: is this correct??
+        deck.sort(null);
     }
 }
