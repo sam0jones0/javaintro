@@ -46,13 +46,7 @@ public class Card implements Comparable<Card> {
         } else if (this.suit.ordinal() > otherCard.suit.ordinal()) {
             return 1;
         } else {
-            if (this.rank.ordinal() < otherCard.rank.ordinal()) {
-                return -1;
-            } else if (this.rank.ordinal() > otherCard.rank.ordinal()) {
-                return 1;
-            } else {
-                return 0;
-            }
+            return Integer.compare(this.rank.ordinal(), otherCard.rank.ordinal());
         }
     }
 
