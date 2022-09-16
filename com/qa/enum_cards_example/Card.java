@@ -40,6 +40,7 @@ public class Card implements Comparable<Card> {
         // This might work and looks nicer?
         // var x = this.suit.compareTo(otherCard.suit);
 
+        // @Eylem if you see this: It's sorting wrong and I can't figure out why.
         // FIXME: Something not quite working right...
 
         if (this.suit.ordinal() < otherCard.suit.ordinal()) {
