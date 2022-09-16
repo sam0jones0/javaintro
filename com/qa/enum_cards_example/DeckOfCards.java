@@ -6,7 +6,7 @@ public class DeckOfCards {
     ArrayList<Card> deck;
 
     DeckOfCards() {
-        this.deck = new ArrayList<Card>();
+        this.deck = new ArrayList<>();
 
         for (Suit suit : Suit.values()) {
             for (Rank value : Rank.values()) {
@@ -14,7 +14,6 @@ public class DeckOfCards {
             }
         }
 
-        // FIXME: is this correct??
         deck.sort(null);
     }
 }

@@ -2,3 +2,6 @@
 .vscode/settings.json
 src/Scratchpad.java
 .DS_STORE
+/javaintro.iml
+/.idea/
+/out/
