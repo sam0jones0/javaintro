@@ -1,3 +1,5 @@
+package com.qa.misc;
+
 public class AddressExercise {
     public static void main(String[] args) {
         int x = 100;

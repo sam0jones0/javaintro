@@ -1,3 +1,5 @@
+package com.qa.misc;
+
 import java.lang.StringBuilder;
 
 public class ArraysAndStrings {

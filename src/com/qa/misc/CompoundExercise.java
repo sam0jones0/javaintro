@@ -1,3 +1,5 @@
+package com.qa.misc;
+
 public class CompoundExercise {
     public static void main(String[] args) {
 

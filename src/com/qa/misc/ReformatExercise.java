@@ -1,3 +1,5 @@
+package com.qa.misc;
+
 public class ReformatExercise {
     public static void main(String[] args) {
         // Consider the following code snippet.

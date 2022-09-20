@@ -1,3 +1,5 @@
+package com.qa.misc;
+
 public class DeckOfCards {
 
     private Card[] deck;

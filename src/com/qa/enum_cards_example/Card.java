@@ -38,9 +38,6 @@ public class Card implements Comparable<Card> {
             return 0;
         }
 
-        // This might work and looks nicer?
-        // var x = this.suit.compareTo(otherCard.suit);
-
         if (this.suit.ordinal() < otherCard.suit.ordinal()) {
             return -1;
         } else if (this.suit.ordinal() > otherCard.suit.ordinal()) {
