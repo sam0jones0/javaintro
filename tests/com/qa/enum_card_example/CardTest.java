@@ -2,6 +2,8 @@ package com.qa.enum_cards_example;
 
 import javax.print.attribute.standard.MediaSize;
 
+import java.util.Objects;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CardTest {
@@ -26,10 +28,18 @@ class CardTest {
 
     @org.junit.jupiter.api.Test
     void testHashCode() {
+        assertEquals(Objects.hash(Suit.SPADE, Rank.ACE), testCard.hashCode());
     }
 
     @org.junit.jupiter.api.Test
     void compareTo() {
+        assertEquals(-1, testCard.compareTo(otherTestCard));
+        assertEquals(0, testCard.compareTo(testCard));
+        assertEquals(1, otherTestCard.compareTo(testCard));
+
+//        Card smaller = new Card(Suit.DIAMOND, Rank.ACE);
+//        Card bigger = new Card(Suit.DIAMOND, Rank.KING);
+//        assertTrue(smaller < bigger);
     }
 
     @org.junit.jupiter.api.Test
